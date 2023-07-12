@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['result3'] = transformer3($kva3, $z3, $volt3, $fla3);
 
     // Redirect back to index.php
-    header("Location: ../index.php#table");
+    header("Location: ../index.php#isca");
     exit;
 }
 

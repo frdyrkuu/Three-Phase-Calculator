@@ -167,18 +167,67 @@ unset($_SESSION['result3']);
                         </div>
                     </div>
                 </div>
-
                 <div class="mx-auto w-1/2 flex justify-center items-center mt-6">
                     <button type="submit" class="py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200">Simulate</button>
-
                 </div>
-
                 <div class="items-center justify-center mx-auto mt-10">
                     <img class="w-full sm:w-3/4 mx-auto shadow" src="public/img/sld.png" alt="sld">
                 </div>
             </form>
         </section>
+        <hr id="isca" class="mx-auto border-transparent w-1/2 h-1">
+        <hr class="mx-auto border-transparent w-1/2 h-1">
+        <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
+        <section class="mt-10">
+            <h1 class="font-semibold text-2xl text-gray-600 py-4 px-10">ISCA</h1>
+            <div class="flex gap-32 text-center items-center justify-center">
 
+                <div>
+                    <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 1</p>
+                    <label for="iscaT">Isca for T</label>
+                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca</sub> = <?php echo isset($result1['IflaforT']) ? $result1['IflaforT'] : 0; ?></p>
+                    <br>
+                    <label for="iscatcable">Isca for Tcable</label>
+                    <p class="font-serif text-2xl italic" id="iscatcable">I<sub>sca@Fault</sub> = <?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] : 0; ?></p>
+                    <br>
+                    <label for="iscanm">Isca for NM</label>
+                    <p class="font-serif text-2xl italic" id="iscanm">I<sub>sca@Fault</sub> = <?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] : 0; ?></p>
+                    <br>
+                    <label for="iscam">Isca for M</label>
+                    <p class="font-serif text-2xl italic" id="iscam">I<sub>sc4</sub> = <?php echo isset($result1['iscaforM']) ? $result1['iscaforM'] : 0; ?></p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 2</p>
+                    <label for="iscaT">Isca for T</label>
+                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca</sub> = <?php echo isset($result2['IflaforT']) ? $result2['IflaforT'] : 0; ?></p>
+                    <br>
+                    <label for="iscatcable">Isca for Tcable</label>
+                    <p class="font-serif text-2xl italic" id="iscatcable">I<sub>sca@Fault</sub> = <?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] : 0; ?></p>
+                    <br>
+                    <label for="iscanm">Isca for NM</label>
+                    <p class="font-serif text-2xl italic" id="iscanm">I<sub>sca@Fault</sub> = <?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] : 0; ?></p>
+                    <br>
+                    <label for="iscam">Isca for M</label>
+                    <p class="font-serif text-2xl italic" id="iscam">I<sub>sc4</sub> = <?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] : 0; ?></p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 3</p>
+                    <label for="iscaT">Isca for T</label>
+                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca</sub> = <?php echo isset($result3['IflaforT']) ? $result3['IflaforT'] : 0; ?></p>
+                    <br>
+                    <label for="iscatcable">Isca for Tcable</label>
+                    <p class="font-serif text-2xl italic" id="iscatcable">I<sub>sca@Fault</sub> = <?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] : 0; ?></p>
+                    <br>
+                    <label for="iscanm">Isca for NM</label>
+                    <p class="font-serif text-2xl italic" id="iscanm">I<sub>sca@Fault</sub> = <?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] : 0; ?></p>
+                    <br>
+                    <label for="iscam">Isca for M</label>
+                    <p class="font-serif text-2xl italic" id="iscam">I<sub>sc4</sub> = <?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] : 0; ?></p>
+                </div>
+            </div>
+        </section>
 
         <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
 
