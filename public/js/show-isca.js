@@ -1,5 +1,5 @@
 const show = document.getElementById('show-isca');
-const iscaT = document.getElementById('iscaT');
+const iscaT = document.getElementById('check-value');
 const textContent = iscaT.textContent;
 const value = textContent.match(/\d+/)[0];
 
