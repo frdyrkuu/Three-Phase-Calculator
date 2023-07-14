@@ -178,8 +178,8 @@ unset($_SESSION['result3']);
         <hr id="isca" class="mx-auto border-transparent w-1/2 h-1">
         <hr class="mx-auto border-transparent w-1/2 h-1">
         <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
-        <section class="mt-10">
-            <h1 class="font-semibold text-2xl text-gray-600 py-4 px-10">ISCA</h1>
+        <section class="hidden mt-10" id="show-isca">
+            <h1 class="font-semibold text-4xl text-gray-600 mb-10 px-10">ISCA Computed Results</h1>
             <div class="flex gap-32 text-center items-center justify-center">
 
                 <div>
@@ -195,6 +195,9 @@ unset($_SESSION['result3']);
                     <br>
                     <label for="iscam">Isca for M</label>
                     <p class="font-serif text-2xl italic" id="iscam">I<sub>sc4</sub> = <?php echo isset($result1['iscaforM']) ? $result1['iscaforM'] : 0; ?></p>
+                    <br>
+                    <label for="ampere">KAIC rating (minimum)</label>
+                    <p class="font-serif text-2xl italic" id="ampere">10 KAIC</p>
                 </div>
 
                 <div>
@@ -210,6 +213,9 @@ unset($_SESSION['result3']);
                     <br>
                     <label for="iscam">Isca for M</label>
                     <p class="font-serif text-2xl italic" id="iscam">I<sub>sc4</sub> = <?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] : 0; ?></p>
+                    <br>
+                    <label for="ampere">KAIC rating (minimum)</label>
+                    <p class="font-serif text-2xl italic" id="ampere">10 KAIC</p>
                 </div>
 
                 <div>
@@ -225,11 +231,14 @@ unset($_SESSION['result3']);
                     <br>
                     <label for="iscam">Isca for M</label>
                     <p class="font-serif text-2xl italic" id="iscam">I<sub>sc4</sub> = <?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] : 0; ?></p>
+                    <br>
+                    <label for="ampere">KAIC rating (minimum)</label>
+                    <p class="font-serif text-2xl italic" id="ampere">10 KAIC</p>
                 </div>
             </div>
+            <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
         </section>
 
-        <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
 
         <section class="px-4 mt-10" id="table">
             <div>
@@ -240,7 +249,7 @@ unset($_SESSION['result3']);
 
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Systems
                     Recommendation</label>
-                <textarea id="message" rows="10" class="block p-2.5 w-full text-normal text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="The system will automatically recommends..."></textarea>
+                <textarea id="message" rows="10" class="block p-2.5 w-full text-normal text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="The system will automatically recommends..." readonly></textarea>
             </div>
 
             <div class="mt-4">
@@ -470,15 +479,16 @@ unset($_SESSION['result3']);
 
         <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
 
-        <section class="px-4 mt-10">
+        <!-- <section class="px-4 mt-10">
             <h1 class="text-2xl font-semibold text-gray-600">Calculations</h1>
 
-        </section>
+        </section> -->
         <!-- END LANDING PAGE -->
 
 
     </main>
     <!-- END MAIN -->
+    <script src="public/js/show-isca.js"></script>
     <script src="public/js/z-percentage.js"></script>
     <script src="public/js/hp-values.js"></script>
 </body>
