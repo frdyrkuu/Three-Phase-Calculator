@@ -783,11 +783,7 @@ Isca@F9 =
         </script>
 
     </main>
-    <!-- END MAIN -->
-    <script src="public/js/download-sld.js"></script>
-    <script src="public/js/show-isca.js"></script>
-    <script src="public/js/z-percentage.js"></script>
-    <script src="public/js/hp-values.js"></script>
+
 </body>
 <footer class="bg-blue-500 rounded-lg shadow mt-20">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -813,5 +809,10 @@ Isca@F9 =
     </div>
 </footer>
 
+<!-- END MAIN -->
+<script src="public/js/download-sld.js"></script>
+<script src="public/js/show-isca.js"></script>
+<script src="public/js/z-percentage.js"></script>
+<script src="public/js/hp-values.js"></script>
 
 </html>
