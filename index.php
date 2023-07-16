@@ -20,6 +20,7 @@ unset($_SESSION['result3']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Phase Short Circuit Fault Calculator</title>
 
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="dist/output.css">
 </head>
 
@@ -353,28 +354,28 @@ LEGEND
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F1 =
-]]><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] : 0; ?>
+]]><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(799.810478 600.701044)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F6 =
-]]><?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] : 0; ?>
+]]><?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1288.319858 600.675842)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F10 =
-]]><?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] : 0; ?>
+]]><?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1224.381248 753.45746)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F11 =
-]]><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] : 0; ?>
+]]><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
 
@@ -382,63 +383,63 @@ Isca@F11 =
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F13 =
-]]><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] : 0; ?>
+]]><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1383.629786 753.745113)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F12 =
-]]><?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] : 0; ?>
+]]><?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(109.365488 756.952685)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F2 =
-]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] : 0; ?>
+]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(268.706024 753.966738)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F3 =
-]]><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] : 0; ?>
+]]><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(427.862564 753.180532)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F4 =
-]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] : 0; ?>
+]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(587.2031 753.734084)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F5 =
-]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] : 0; ?>
+]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(746.543636 753.942451)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F7 =
-]]><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] : 0; ?>
+]]><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(905.884172 753.942451)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F8 =
-]]><?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] : 0; ?>
+]]><?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                                 <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1065.13271 753.942451)" fill="#f00" stroke-width="0">
                                     <tspan y="0" font-weight="700" stroke-width="0">
                                         <![CDATA[
 Isca@F9 =
-]]><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] : 0; ?>
+]]><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?>
                                     </tspan>
                                 </text>
                             </g>
