@@ -178,7 +178,7 @@ unset($_SESSION['result3']);
                     </div>
                 </div>
                 <div class="mx-auto w-1/2 flex justify-center items-center mt-6 sm:mt-20">
-                    <button type="submit" onclick="event.preventDefault(); showValue()" class="py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200">Simulate</button>
+                    <button type="submit" class="py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200">Simulate</button>
                 </div>
             </form>
         </section>
@@ -479,7 +479,7 @@ Isca@F9 =
                 <div>
                     <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 1</p>
                     <label for="iscaT">Isca for F1</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F1</sub> = <span id="check-value"><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] : 0; ?></span> </p>
+                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F1</sub> = <span><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] : 0; ?></span> </p>
                     <br>
 
                     <label for="iscaT">Isca for F2, F4, and F5</label>
@@ -563,7 +563,7 @@ Isca@F9 =
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Ifla for T
                                 </th>
-                                <td class="px-6 py-4">
+                                <td class="px-6 py-4" id="check-value">
                                     <?php echo isset($result1['IflaforT']) ? $result1['IflaforT'] : 0; ?>
                                 </td>
                                 <td class="px-6 py-4">
