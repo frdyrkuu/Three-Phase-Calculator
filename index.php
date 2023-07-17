@@ -178,7 +178,7 @@ unset($_SESSION['result3']);
                     </div>
                 </div>
                 <div class="mx-auto w-1/2 flex justify-center items-center mt-6 sm:mt-20">
-                    <button type="submit" class="py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200">Simulate</button>
+                    <button type="submit" onclick="event.preventDefault(); showValue()" class="py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200">Simulate</button>
                 </div>
             </form>
         </section>
@@ -784,35 +784,35 @@ Isca@F9 =
 
     </main>
 
-</body>
-<footer class="bg-blue-500 rounded-lg shadow mt-20">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="/" class="flex items-center mb-4 sm:mb-0">
-                <img src="public/img/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Three Phase Short Circuit Fault Calculator</span>
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
-                </li>
-                <li>
-                    <a href="/" class="hover:underline">Home</a>
-                </li>
-            </ul>
+    <footer class="bg-blue-500 rounded-lg shadow mt-20">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="/" class="flex items-center mb-4 sm:mb-0">
+                    <img src="public/img/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Three Phase Short Circuit Fault Calculator</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/" class="hover:underline">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-white sm:text-center">© 2023 <a href="/" class="hover:underline">3 Phase Short Circuit Fault Calculator™</a>. All Rights Reserved.</span>
         </div>
-        <hr class="my-6 border-white sm:mx-auto lg:my-8" />
-        <span class="block text-sm text-white sm:text-center">© 2023 <a href="/" class="hover:underline">3 Phase Short Circuit Fault Calculator™</a>. All Rights Reserved.</span>
-    </div>
-</footer>
+    </footer>
 
-<!-- END MAIN -->
-<script src="public/js/download-sld.js"></script>
-<script src="public/js/show-isca.js"></script>
-<script src="public/js/z-percentage.js"></script>
-<script src="public/js/hp-values.js"></script>
+    <!-- SCRIPT -->
+    <script src="public/js/show-isca.js"></script>
+    <script src="public/js/download-sld.js"></script>
+    <script src="public/js/z-percentage.js"></script>
+    <script src="public/js/hp-values.js"></script>
+</body>
 
 </html>
