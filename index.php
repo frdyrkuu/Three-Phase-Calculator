@@ -81,7 +81,7 @@ unset($_SESSION['result3']);
                         <h1 class="text-xl font-semibold">Transformer 1</h1>
 
                         <div class="mt-4">
-                            <label for="volts" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                            <label for="volts" class="block mb-2 text-sm font-medium text-gray-900">Select
                                 an option</label>
                             <select id="volts1" name="voltage_T1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                                 <option value="" disabled selected>Choose a Voltage</option>
@@ -93,18 +93,18 @@ unset($_SESSION['result3']);
                         </div>
 
                         <div class="mt-4">
-                            <label for="kva" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">kVA
+                            <label for="kva" class="block mb-2 text-sm font-medium text-gray-900  ">kVA
                                 (1-750)</label>
-                            <input type="number" id="kva1" name="kva_T1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            <input type="number" id="kva1" name="kva_T1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                         </div>
 
                         <div class="mt-4">
-                            <label for="%z" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">%Z</label>
+                            <label for="%z" class="block mb-2 text-sm font-medium text-gray-900  ">%Z</label>
                             <input type="number" name="z_T1" step="0.0001" id="%z1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="0" readonly>
                         </div>
 
                         <div class="mt-4">
-                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FLA for Three Phase Motors</label>
+                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900  ">FLA for Three Phase Motors</label>
                             <input type="number" name="hp1" step="0.0001" id="hp1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="0" readonly>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ unset($_SESSION['result3']);
                         <h1 class="text-xl font-semibold">Transformer 2</h1>
 
                         <div class="mt-4">
-                            <label for="volts" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                            <label for="volts" class="block mb-2 text-sm font-medium text-gray-900  ">Select
                                 an option</label>
                             <select id="volts2" name="voltage_T2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                                 <option value="" disabled selected>Choose a Voltage</option>
@@ -127,18 +127,18 @@ unset($_SESSION['result3']);
                         </div>
 
                         <div class="mt-4">
-                            <label for="kva2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">kVA
+                            <label for="kva2" class="block mb-2 text-sm font-medium text-gray-900  ">kVA
                                 (1-750)</label>
-                            <input type="number" id="kva2" name="kva_T2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            <input type="number" id="kva2" name="kva_T2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                         </div>
 
                         <div class="mt-4">
-                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">%Z</label>
+                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900  ">%Z</label>
                             <input type="number" name="z_T2" step="0.0001" id="%z2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="0" readonly>
                         </div>
 
                         <div class="mt-4">
-                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FLA for Three Phase Motors</label>
+                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900  ">FLA for Three Phase Motors</label>
                             <input type="number" name="hp2" step="0.0001" id="hp2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="0" readonly>
                         </div>
                     </div>
@@ -149,7 +149,7 @@ unset($_SESSION['result3']);
                         <h1 class="text-xl font-semibold">Transformer 3</h1>
 
                         <div class="mt-4">
-                            <label for="volts" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                            <label for="volts" class="block mb-2 text-sm font-medium text-gray-900  ">Select
                                 an option</label>
                             <select id="volts3" name="voltage_T3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                                 <option value="" disabled selected>Choose a Voltage</option>
@@ -161,18 +161,18 @@ unset($_SESSION['result3']);
                         </div>
 
                         <div class="mt-4">
-                            <label for="kva3" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">kVA
+                            <label for="kva3" class="block mb-2 text-sm font-medium text-gray-900  ">kVA
                                 (1-750)</label>
-                            <input type="number" id="kva3" name="kva_T3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                            <input type="number" id="kva3" name="kva_T3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                         </div>
 
                         <div class="mt-4">
-                            <label for="%z3" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">%Z</label>
+                            <label for="%z3" class="block mb-2 text-sm font-medium text-gray-900  ">%Z</label>
                             <input type="number" name="z_T3" step="0.0001" id="%z3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="0" readonly>
                         </div>
 
                         <div class="mt-4">
-                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FLA for Three Phase Motors</label>
+                            <label for="%z2" class="block mb-2 text-sm font-medium text-gray-900  ">FLA for Three Phase Motors</label>
                             <input type="number" name="hp3" step="0.0001" id="hp3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="0" readonly>
                         </div>
                     </div>
