@@ -70,19 +70,19 @@ function transformer1($kva, $z, $volt, $fla)
     $iscaforM = ($iscaforTcable * $mforMcable) + $imc;
 
     $outputs = array(
-        'IflaforT' => number_format($IflaforT, 2),
-        'MultiplierforT' => number_format($multiplierforT, 2),
-        'iscaforT' => number_format($iscaforT, 2),
+        'IflaforT' => number_format($IflaforT, 3),
+        'MultiplierforT' => number_format($multiplierforT, 3),
+        'iscaforT' => number_format($iscaforT, 3),
         'FforTcable' => number_format($FforTcable, 3),
-        'mforTcable' => number_format($mforTcable, 2),
-        'iscaforTcable' => number_format($iscaforTcable, 2),
-        'FforNMcable' => number_format($FforNMcable, 2),
-        'mforNMcable' => number_format($mforNMcable, 2),
-        'iscaforNM' => number_format($iscaforNM, 2),
-        'FforMcable' => number_format($FforMcable, 2),
-        'mforMcable' => number_format($mforMcable, 2),
-        'imc' => number_format($imc, 2),
-        'iscaforM' => number_format($iscaforM, 2)
+        'mforTcable' => number_format($mforTcable, 3),
+        'iscaforTcable' => number_format($iscaforTcable, 3),
+        'FforNMcable' => number_format($FforNMcable, 3),
+        'mforNMcable' => number_format($mforNMcable, 3),
+        'iscaforNM' => number_format($iscaforNM, 3),
+        'FforMcable' => number_format($FforMcable, 3),
+        'mforMcable' => number_format($mforMcable, 3),
+        'imc' => number_format($imc, 3),
+        'iscaforM' => number_format($iscaforM, 3)
     );
 
     // Return the result
@@ -132,19 +132,19 @@ function transformer2($kva, $z, $volt, $fla)
     $iscaforM = ($iscaforTcable * $mforMcable) + $imc;
 
     $outputs = array(
-        'IflaforT' => number_format($IflaforT, 2),
-        'MultiplierforT' => number_format($multiplierforT, 2),
-        'iscaforT' => number_format($iscaforT, 2),
-        'FforTcable' => number_format($FforTcable, 2),
-        'mforTcable' => number_format($mforTcable, 2),
-        'iscaforTcable' => number_format($iscaforTcable, 2),
-        'FforNMcable' => number_format($FforNMcable, 2),
-        'mforNMcable' => number_format($mforNMcable, 2),
-        'iscaforNM' => number_format($iscaforNM, 2),
-        'FforMcable' => number_format($FforMcable, 2),
-        'mforMcable' => number_format($mforMcable, 2),
-        'imc' => number_format($imc, 2),
-        'iscaforM' => number_format($iscaforM, 2)
+        'IflaforT' => number_format($IflaforT, 3),
+        'MultiplierforT' => number_format($multiplierforT, 3),
+        'iscaforT' => number_format($iscaforT, 3),
+        'FforTcable' => number_format($FforTcable, 3),
+        'mforTcable' => number_format($mforTcable, 3),
+        'iscaforTcable' => number_format($iscaforTcable, 3),
+        'FforNMcable' => number_format($FforNMcable, 3),
+        'mforNMcable' => number_format($mforNMcable, 3),
+        'iscaforNM' => number_format($iscaforNM, 3),
+        'FforMcable' => number_format($FforMcable, 3),
+        'mforMcable' => number_format($mforMcable, 3),
+        'imc' => number_format($imc, 3),
+        'iscaforM' => number_format($iscaforM, 3)
     );
     // Return the result
     return $outputs;
@@ -193,19 +193,19 @@ function transformer3($kva, $z, $volt, $fla)
     $iscaforM = ($iscaforTcable * $mforMcable) + $imc;
 
     $outputs = array(
-        'IflaforT' => number_format($IflaforT, 2),
-        'MultiplierforT' => number_format($multiplierforT, 2),
-        'iscaforT' => number_format($iscaforT, 2),
-        'FforTcable' => number_format($FforTcable, 2),
-        'mforTcable' => number_format($mforTcable, 2),
-        'iscaforTcable' => number_format($iscaforTcable, 2),
-        'FforNMcable' => number_format($FforNMcable, 2),
-        'mforNMcable' => number_format($mforNMcable, 2),
-        'iscaforNM' => number_format($iscaforNM, 2),
-        'FforMcable' => number_format($FforMcable, 2),
-        'mforMcable' => number_format($mforMcable, 2),
-        'imc' => number_format($imc, 2),
-        'iscaforM' => number_format($iscaforM, 2)
+        'IflaforT' => number_format($IflaforT, 3),
+        'MultiplierforT' => number_format($multiplierforT, 3),
+        'iscaforT' => number_format($iscaforT, 3),
+        'FforTcable' => number_format($FforTcable, 3),
+        'mforTcable' => number_format($mforTcable, 3),
+        'iscaforTcable' => number_format($iscaforTcable, 3),
+        'FforNMcable' => number_format($FforNMcable, 3),
+        'mforNMcable' => number_format($mforNMcable, 3),
+        'iscaforNM' => number_format($iscaforNM, 3),
+        'FforMcable' => number_format($FforMcable, 3),
+        'mforMcable' => number_format($mforMcable, 3),
+        'imc' => number_format($imc, 3),
+        'iscaforM' => number_format($iscaforM, 3)
     );
     // Return the result
     return $outputs;
