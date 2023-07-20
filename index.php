@@ -422,6 +422,7 @@ Isca@F2 =
                                     <![CDATA[
 Isca@F3 =
 ]]><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] . 'A' : '0A'; ?>
+
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(427.862564 753.180532)" fill="#f00" stroke-width="0">
@@ -471,12 +472,11 @@ Isca@F9 =
         <hr class="mx-auto border-transparent w-1/2 h-1">
         <hr class="mx-auto border-transparent w-1/2 h-1">
         <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
-
-        <section class="hidden mt-10" id="show-isca">
+        <!-- id="show-isca" -->
+        <section class="mt-10">
             <h1 class="font-semibold text-4xl text-gray-600 mb-10 px-10">ISCA Computed Results</h1>
-            <div class="grid gap-32 text-center items-center justify-center sm:flex">
-
-                <div>
+            <!-- <div class="grid gap-32 text-center items-center justify-center sm:flex"> -->
+            <!-- <div>
                     <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 1</p>
                     <label for="iscaT">Isca for F1</label>
                     <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F1</sub> = <span><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] : 0; ?></span> </p>
@@ -521,9 +521,189 @@ Isca@F9 =
                     <br>
 
                 </div>
+            </div> -->
+            <div class="mt-4 grid gap-4 sm:flex sm:justify-center font-serif">
+
+                <!-- TRANSFORMER 1 -->
+                <div class="overflow-x-auto mt-4 shadow-xl rounded-2xl w-full">
+                    <table class="w-full text-left text-gray-500 text-lg">
+                        <thead class="text-xl text-gray-700 uppercase dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                                    Fault
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    KAIC Rating
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F1 = <span id="f1-isca"><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f1">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F2 = <span id="f2-isca"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f2">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F3 = <span id="f3-isca"><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f3">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F4 = <span id="f4-isca"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f4">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F5 = <span id="f5-isca"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f5">
+                                    0
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- TRANSFORMER 2 -->
+                <div class="overflow-x-auto mt-4 shadow-xl rounded-2xl w-full">
+                    <table class="w-full text-xl text-left text-gray-500">
+                        <thead class="text-lg text-gray-700 uppercase dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                                    Fault
+                                </th>
+
+                                <th scope="col" class="px-6 py-3">
+                                    KAIC Rating
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F6 = <span id="f6-isca"><?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f6">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F7 = <span id="f7-isca"><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f7">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F8 = <span id="f8-isca"><?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f8">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F9 = <span id="f9-isca"><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f9">
+                                    0
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- TRANSFORMER 3  -->
+
+                <div class="overflow-x-auto mt-4 shadow-xl rounded-2xl w-full">
+                    <table class="w-full text-xl text-left text-gray-500">
+                        <thead class="text-lg text-gray-700 uppercase dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                                    Fault
+                                </th>
+
+                                <th scope="col" class="px-6 py-3">
+                                    KAIC Rating
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F10 = <span id="f10-isca"><?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f10">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F11 = <span id="f11-isca"><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f11">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F12 = <span id="f12-isca"><?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f12">
+                                    0
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                    F13 = <span id="f13-isca"><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?></span>
+                                </th>
+
+                                <td class="px-6 py-4" id="f13">
+                                    0
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
+
             <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
         </section>
+
 
 
         <section class="px-4 mt-10" id="table">
@@ -810,6 +990,9 @@ Isca@F9 =
 
     <!-- SCRIPT -->
     <script src="public/js/show-isca.js"></script>
+    <script src="public/js/kaic-value-T1.js"></script>
+    <script src="public/js/kaic-value-T2.js"></script>
+    <script src="public/js/kaic-value-T3.js"></script>
     <script src="public/js/download-sld.js"></script>
     <script src="public/js/z-percentage.js"></script>
     <script src="public/js/hp-values.js"></script>

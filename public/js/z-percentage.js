@@ -41,7 +41,7 @@ kvaInput.addEventListener('input', function () {
         } else if (kvaValue >= 501 && kvaValue <= 750) {
             zValue = 3.5;
         }
-
+        
         // Update the %z input value
         zInput.value = zValue.toString();
     } else {
