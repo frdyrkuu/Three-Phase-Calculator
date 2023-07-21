@@ -189,7 +189,6 @@ unset($_SESSION['result3']);
             </form>
         </section>
 
-
         <hr class="mx-auto border-transparent w-1/2 h-1" id="isca">
         <hr class="mx-auto border-transparent w-1/2 h-1">
         <hr class="mx-auto bg-gray-600 w-10/12 sm:1/2 h-1 mt-32">
@@ -377,28 +376,28 @@ LEGEND
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F1 =
-]]><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(799.810478 600.701044)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F6 =
-]]><?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1288.319858 600.675842)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F10 =
-]]><?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1224.381248 753.45746)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F11 =
-]]><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
 
@@ -406,28 +405,28 @@ Isca@F11 =
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F13 =
-]]><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1383.629786 753.745113)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F12 =
-]]><?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(109.365488 756.952685)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F2 =
-]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(268.706024 753.966738)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F3 =
-]]><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result1['iscaforM']) ? $result1['iscaforM'] . 'A' : '0A'; ?>
 
                                 </tspan>
                             </text>
@@ -435,35 +434,35 @@ Isca@F3 =
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F4 =
-]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(587.2031 753.734084)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F5 =
-]]><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(746.543636 753.942451)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F7 =
-]]><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(905.884172 753.942451)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F8 =
-]]><?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                             <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1065.13271 753.942451)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F9 =
-]]><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?>
+]]><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
                         </g>
@@ -481,53 +480,6 @@ Isca@F9 =
         <!-- id="show-isca" -->
         <section class="mt-10">
             <h1 class="font-semibold text-4xl text-gray-600 mb-10 px-10">ISCA Computed Results</h1>
-            <!-- <div class="grid gap-32 text-center items-center justify-center sm:flex"> -->
-            <!-- <div>
-                    <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 1</p>
-                    <label for="iscaT">Isca for F1</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F1</sub> = <span><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] : 0; ?></span> </p>
-                    <br>
-
-                    <label for="iscaT">Isca for F2, F4, and F5</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F2, F4 & F5</sub> = <?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] : 0; ?></p>
-                    <br>
-
-                    <label for="iscaT">Isca for F3</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F3</sub> = <?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] : 0; ?></p>
-                    <br>
-                </div>
-
-                <div>
-                    <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 2</p>
-                    <label for="iscaT">Isca for F6</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F6</sub> = <?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] : 0; ?></p>
-                    <br>
-
-                    <label for="iscaT">Isca for F7 and F9</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F7 & F9</sub> = <?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] : 0; ?></p>
-                    <br>
-
-                    <label for="iscaT">Isca for F8</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F8</sub> = <?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] : 0; ?></p>
-                    <br>
-                </div>
-
-                <div>
-                    <p class="text-xl font-semibold text-gray-600 mb-4">Transformer 3</p>
-                    <label for="iscaT">Isca for F10</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F10</sub> = <?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] : 0; ?></p>
-                    <br>
-
-                    <label for="iscaT">Isca for F11 and F13</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F11 & F13</sub> = <?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] : 0; ?></p>
-                    <br>
-
-                    <label for="iscaT">Isca for F12</label>
-                    <p class="font-serif text-2xl italic" id="iscaT">I<sub>sca@F12</sub> = <?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] : 0; ?></p>
-                    <br>
-
-                </div>
-            </div> -->
             <div class="mt-4 grid gap-4 sm:flex sm:justify-center font-serif">
 
                 <!-- TRANSFORMER 1 -->
@@ -546,7 +498,7 @@ Isca@F9 =
                         <tbody>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F1 = <span id="f1-isca"><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] . 'A' : '0A'; ?></span>
+                                    F1 = <span id="f1-isca"><?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f1">
@@ -555,7 +507,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F2 = <span id="f2-isca"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F2 = <span id="f2-isca"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f2">
@@ -564,7 +516,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F3 = <span id="f3-isca"><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] . 'A' : '0A'; ?></span>
+                                    F3 = <span id="f3-isca"><?php echo isset($result1['iscaforM']) ? $result1['iscaforM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f3">
@@ -573,7 +525,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F4 = <span id="f4-isca"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F4 = <span id="f4-isca"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f4">
@@ -582,7 +534,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F5 = <span id="f5-isca"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F5 = <span id="f5-isca"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f5">
@@ -610,7 +562,7 @@ Isca@F9 =
                         <tbody>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F6 = <span id="f6-isca"><?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] . 'A' : '0A'; ?></span>
+                                    F6 = <span id="f6-isca"><?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f6">
@@ -619,7 +571,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F7 = <span id="f7-isca"><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F7 = <span id="f7-isca"><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f7">
@@ -628,7 +580,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F8 = <span id="f8-isca"><?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] . 'A' : '0A'; ?></span>
+                                    F8 = <span id="f8-isca"><?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f8">
@@ -637,7 +589,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F9 = <span id="f9-isca"><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F9 = <span id="f9-isca"><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f9">
@@ -667,7 +619,7 @@ Isca@F9 =
                         <tbody>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F10 = <span id="f10-isca"><?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] . 'A' : '0A'; ?></span>
+                                    F10 = <span id="f10-isca"><?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f10">
@@ -676,7 +628,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F11 = <span id="f11-isca"><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F11 = <span id="f11-isca"><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f11">
@@ -685,7 +637,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F12 = <span id="f12-isca"><?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] . 'A' : '0A'; ?></span>
+                                    F12 = <span id="f12-isca"><?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f12">
@@ -694,7 +646,7 @@ Isca@F9 =
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                                    F13 = <span id="f13-isca"><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . 'A' : '0A'; ?></span>
+                                    F13 = <span id="f13-isca"><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
                                 <td class="px-6 py-4" id="f13">
@@ -711,19 +663,7 @@ Isca@F9 =
         </section>
 
 
-
         <section class="px-4 mt-10" id="table">
-            <div>
-                <h1 class="text-2xl font-semibold text-gray-600">Output</h1>
-            </div>
-
-            <div class="mt-4">
-
-                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Systems
-                    Recommendation</label>
-                <textarea id="message" rows="10" class="block p-2.5 w-full text-normal text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="The system will automatically recommends..." readonly></textarea>
-            </div>
-
             <div class="mt-4">
                 <h1 class="text-2xl font-semibold text-gray-600">Tables</h1>
                 <div class="relative overflow-x-auto mt-4 shadow-xl rounded-2xl">
@@ -781,13 +721,13 @@ Isca@F9 =
                                     Isca for T
                                 </th>
                                 <td class="px-6 py-4">
-                                    <?php echo isset($result1['IflaforT']) ? $result1['IflaforT'] : 0; ?>
+                                    <?php echo isset($result1['iscaforT']) ? $result1['iscaforT'] : 0; ?>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <?php echo isset($result2['IflaforT']) ? $result2['IflaforT'] : 0; ?>
+                                    <?php echo isset($result2['iscaforT']) ? $result2['iscaforT'] : 0; ?>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <?php echo isset($result3['IflaforT']) ? $result3['IflaforT'] : 0; ?>
+                                    <?php echo isset($result3['iscaforT']) ? $result3['iscaforT'] : 0; ?>
                                 </td>
                             </tr>
 
