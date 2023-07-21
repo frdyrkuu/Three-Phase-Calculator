@@ -95,7 +95,7 @@ unset($_SESSION['result3']);
                         <div class="mt-4">
                             <label for="kva" class="block mb-2 text-sm font-medium text-gray-900  ">kVA
                                 (1-750)</label>
-                            <input type="number" id="kva1" name="kva_T1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                            <input type="number" max="750" id="kva1" name="kva_T1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                         </div>
 
                         <div class="mt-4">
@@ -129,7 +129,7 @@ unset($_SESSION['result3']);
                         <div class="mt-4">
                             <label for="kva2" class="block mb-2 text-sm font-medium text-gray-900  ">kVA
                                 (1-750)</label>
-                            <input type="number" id="kva2" name="kva_T2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                            <input type="number" max="750" id="kva2" name="kva_T2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                         </div>
 
                         <div class="mt-4">
@@ -163,7 +163,7 @@ unset($_SESSION['result3']);
                         <div class="mt-4">
                             <label for="kva3" class="block mb-2 text-sm font-medium text-gray-900  ">kVA
                                 (1-750)</label>
-                            <input type="number" id="kva3" name="kva_T3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                            <input type="number" max="750" id="kva3" name="kva_T3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                         </div>
 
                         <div class="mt-4">
@@ -177,6 +177,12 @@ unset($_SESSION['result3']);
                         </div>
                     </div>
                 </div>
+                <?php
+                if (isset($_SESSION['error'])) {
+                    echo '<div class="text-red-500 font-semibold text-sm mt-5">' . $_SESSION['error'] . '</div>';
+                    unset($_SESSION['error']); // Clear the error message after displaying it
+                }
+                ?>
                 <div class="mx-auto w-1/2 flex justify-center items-center mt-6 sm:mt-20">
                     <button type="submit" class="py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200">Simulate</button>
                 </div>
