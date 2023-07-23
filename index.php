@@ -372,28 +372,28 @@ LEGEND
                             <line x1="-10.213904" y1="12.455495" x2="10.213904" y2="-12.455495" transform="translate(417.64866 727.38961)" fill="none" stroke="#f00" stroke-width="3" />
                             <line x1="-10.213904" y1="12.455495" x2="10.213904" y2="-12.455495" transform="translate(258.49212 727.389611)" fill="none" stroke="#f00" stroke-width="3" />
 
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(321.78887 613.444747)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(321.78887 613.444747)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F1 =
 ]]><?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(799.810478 600.701044)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(799.810478 600.701044)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F6 =
 ]]><?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1288.319858 600.675842)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(1288.319858 600.675842)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F10 =
 ]]><?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1224.381248 753.45746)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(1224.381248 753.45746)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F11 =
@@ -401,28 +401,28 @@ Isca@F11 =
                                 </tspan>
                             </text>
 
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1542.970322 753.855871)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(1542.970322 753.855871)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F13 =
 ]]><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1383.629786 753.745113)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(1383.629786 753.745113)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F12 =
 ]]><?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(109.365488 756.952685)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(109.365488 756.952685)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F2 =
 ]]><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(268.706024 753.966738)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(268.706024 753.966738)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F3 =
@@ -430,35 +430,35 @@ Isca@F3 =
 
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(427.862564 753.180532)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(427.862564 753.180532)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F4 =
 ]]><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(587.2031 753.734084)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(587.2031 753.734084)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F5 =
 ]]><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(746.543636 753.942451)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(746.543636 753.942451)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F7 =
 ]]><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(905.884172 753.942451)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(905.884172 753.942451)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F8 =
 ]]><?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] . 'A' : '0A'; ?>
                                 </tspan>
                             </text>
-                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="18" font-weight="700" transform="translate(1065.13271 753.942451)" fill="#f00" stroke-width="0">
+                            <text dx="0" dy="0" font-family="&quot;ePuBUMqD8wp1:::Roboto&quot;" font-size="12" font-weight="700" transform="translate(1065.13271 753.942451)" fill="#f00" stroke-width="0">
                                 <tspan y="0" font-weight="700" stroke-width="0">
                                     <![CDATA[
 Isca@F9 =
