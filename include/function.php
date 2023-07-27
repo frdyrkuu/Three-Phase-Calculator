@@ -105,7 +105,11 @@ function transformer1($kva, $z, $volt, $fla)
                 'FforMcable' => number_format($FforMcable, 3),
                 'mforMcable' => number_format($mforMcable, 3),
                 'imc' => number_format($imc, 3),
-                'iscaforM' => number_format($iscaforM, 3)
+                'iscaforM' => number_format($iscaforM, 3),
+                'kVA' => $kva,
+                'z' => $z,
+                'e' => $volt,
+                'fla' => $fla
             );
             // Return the result
             return $outputs;
@@ -185,7 +189,11 @@ function transformer2($kva, $z, $volt, $fla)
                 'FforMcable' => number_format($FforMcable, 3),
                 'mforMcable' => number_format($mforMcable, 3),
                 'imc' => number_format($imc, 3),
-                'iscaforM' => number_format($iscaforM, 3)
+                'iscaforM' => number_format($iscaforM, 3),
+                'kVA' => $kva,
+                'z' => $z,
+                'e' => $volt,
+                'fla' => $fla
             );
             // Return the result
             return $outputs;
@@ -265,7 +273,11 @@ function transformer3($kva, $z, $volt, $fla)
                 'FforMcable' => number_format($FforMcable, 3),
                 'mforMcable' => number_format($mforMcable, 3),
                 'imc' => number_format($imc, 3),
-                'iscaforM' => number_format($iscaforM, 3)
+                'iscaforM' => number_format($iscaforM, 3),
+                'kVA' => $kva,
+                'z' => $z,
+                'e' => $volt,
+                'fla' => $fla
             );
             // Return the result
             return $outputs;

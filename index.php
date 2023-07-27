@@ -1,6 +1,6 @@
 <?php
-session_start();
 
+session_start();
 // Retrieve the stored results from session variables
 $result1 = isset($_SESSION['result1']) ? $_SESSION['result1'] : array();
 $result2 = isset($_SESSION['result2']) ? $_SESSION['result2'] : array();
@@ -27,7 +27,18 @@ unset($_SESSION['result3']);
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/canvas2image.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
+    <!-- Include html2canvas library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+    <!-- Include FileSaver library for saving the image -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
 </head>
 
 <body class="body min-h-screen font-['Poppins']">
@@ -663,7 +674,7 @@ Isca@F9 =
         </section>
 
 
-        <section class="px-4 mt-10" id="table">
+        <section class="px-4 mt-10" id="table" hidden>
             <div class="mt-4">
                 <h1 class="text-2xl font-semibold text-gray-600">Tables</h1>
                 <div class="relative overflow-x-auto mt-4 shadow-xl rounded-2xl">
@@ -888,27 +899,275 @@ Isca@F9 =
                 </div>
             </div>
         </section>
+        <h1 class="text-2xl px-4 sm:text-4xl font-semibold mt-10 text-gray-600">Formula and Solutions</h1>
+    </main>
 
-        <!-- <section class="px-4 mt-10">
-            <h1 class="text-2xl font-semibold text-gray-600">Calculations</h1>
 
-        </section> -->
-        <!-- END LANDING PAGE -->
+    <!-- CALCAULATIONS  -->
 
-        <button id="scroll-btn" onclick="scrollToBottom()" class="fixed bottom-4 right-4 rounded-full bg-yellow-300 text-white w-15 h-15 flex items-center justify-center mb-10 animate-bounce">
-            <i class="fa-solid fa-angles-down w-16 h-10 mt-6"></i>
-        </button>
+    <section class="grid lg:flex lg:gap-24 item-center justify-center mx-auto" id="calculation">
+
+        <div class="mt-10" id="formula">
+            <h1 class="text-gray-600 font-semibold text-xl">Transformer 1</h1>
+
+            <div class="mt-10 text-xl">
+                \( I_{FLA(T)} = <?php echo isset($result1['kVA']) ? $result1['kVA'] : "KVA"; ?> \cdot \frac{{1000}}{{ <?php echo isset($result1['e']) ? $result1['e'] : "E"; ?> (\sqrt{3})}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['IflaforT']) ? $result1['IflaforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( Multiplier = \frac{{100}}{{ <?php echo isset($result1['z']) ? $result1['z'] : "Z_{tr}"; ?>}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['MultiplierforT']) ? $result1['MultiplierforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA(T)} = <?php echo isset($result1['IflaforT']) ? $result1['IflaforT'] : "I_{FLA}"; ?> \cdot <?php echo isset($result1['MultiplierforT']) ? $result1['MultiplierforT'] : "Multiplier"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['iscaforT']) ? $result1['iscaforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( f_{(T)} = \frac{{WireLength \cdot <?php echo isset($result1['iscaforT']) ? $result1['iscaforT'] : "I_{isca(T)}"; ?>}}{{ (C \cdot <?php echo isset($result1['e']) ? $result1['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result1['FforTcable']) ? $result1['FforTcable'] : "f_{(Tcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['mforTcable']) ? $result1['mforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA@Fault} = <?php echo isset($result1['iscaforT']) ? $result1['iscaforT'] : "I_{SCA(T)}"; ?> \cdot <?php echo isset($result1['mforTcable']) ? $result1['mforTcable'] : "M"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <!-- f for nmcable -->
+            <div class="mt-10 text-xl">
+                \( f_{(Tcable)} = \frac{{(\sqrt{3} \cdot WireLength \cdot <?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] : "I_{SCA(Tcable)}"; ?>)}}{{ (C \cdot <?php echo isset($result1['e']) ? $result1['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result1['FforNMcable']) ? $result1['FforNMcable'] : "f_{(NMcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['mforNMcable']) ? $result1['mforNMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA@Fault} = <?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] : "I_{SCA(Tcable)}"; ?> \cdot <?php echo isset($result1['mforNMcable']) ? $result1['mforNMcable'] : "M"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . "A" : " "; ?></span>
+            </div>
+
+            <!-- f for mcable -->
+            <div class="mt-10 text-xl">
+                \( f_{(Mcable)} = \frac{{(\sqrt{3} \cdot WireLength \cdot <?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] : "I_{SCA(Tcable)}"; ?>)}}{{ (C \cdot <?php echo isset($result1['e']) ? $result1['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result1['FforMcable']) ? $result1['FforMcable'] : "f_{(Mcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['mforMcable']) ? $result1['mforMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{mc} = 4 \cdot <?php echo isset($result1['fla']) ? $result1['fla'] : "FLC_{motor}"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result1['imc']) ? $result1['imc'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{sc4} = <?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] : "I_{sc4}"; ?> \cdot <?php echo isset($result1['mforMcable']) ? $result1['mforMcable'] : "M_{4}"; ?> + <?php echo isset($result1['imc']) ? $result1['imc'] : "I_{mc}"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result1['iscaforM']) ? $result1['iscaforM'] . "A" : " "; ?></span>
+            </div>
+        </div>
+
+        <!-- <hr class="mt-10 border-2 border-gray-700"> -->
+
+
+        <div class="mt-10" id="formula">
+            <h1 class="text-gray-600 font-semibold text-xl">Transformer 2</h1>
+
+            <div class="mt-10 text-xl">
+                \( I_{FLA(T)} = <?php echo isset($result2['kVA']) ? $result2['kVA'] : "KVA"; ?> \cdot \frac{{1000}}{{ <?php echo isset($result2['e']) ? $result2['e'] : "E"; ?> (\sqrt{3})}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['IflaforT']) ? $result2['IflaforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( Multiplier = \frac{{100}}{{ <?php echo isset($result2['z']) ? $result2['z'] : "Z_{tr}"; ?>}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['MultiplierforT']) ? $result2['MultiplierforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA(T)} = <?php echo isset($result2['IflaforT']) ? $result2['IflaforT'] : "I_{FLA}"; ?> \cdot <?php echo isset($result2['MultiplierforT']) ? $result2['MultiplierforT'] : "Multiplier"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['iscaforT']) ? $result2['iscaforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( f_{(T)} = \frac{{WireLength \cdot <?php echo isset($result2['iscaforT']) ? $result2['iscaforT'] : "I_{isca(T)}"; ?>}}{{ (C \cdot <?php echo isset($result2['e']) ? $result2['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result2['FforTcable']) ? $result2['FforTcable'] : "f_{(Tcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['mforTcable']) ? $result2['mforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA@Fault} = <?php echo isset($result2['iscaforT']) ? $result2['iscaforT'] : "I_{SCA(T)}"; ?> \cdot <?php echo isset($result2['mforTcable']) ? $result2['mforTcable'] : "M"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <!-- f for nmcable -->
+            <div class="mt-10 text-xl">
+                \( f_{(Tcable)} = \frac{{(\sqrt{3} \cdot WireLength \cdot <?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] : "I_{SCA(Tcable)}"; ?>)}}{{ (C \cdot <?php echo isset($result2['e']) ? $result2['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result2['FforNMcable']) ? $result2['FforNMcable'] : "f_{(NMcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['mforNMcable']) ? $result2['mforNMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA@Fault} = <?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] : "I_{SCA(Tcable)}"; ?> \cdot <?php echo isset($result2['mforNMcable']) ? $result2['mforNMcable'] : "M"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . "A" : " "; ?></span>
+            </div>
+
+            <!-- f for mcable -->
+            <div class="mt-10 text-xl">
+                \( f_{(Mcable)} = \frac{{(\sqrt{3} \cdot WireLength \cdot <?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] : "I_{SCA(Tcable)}"; ?>)}}{{ (C \cdot <?php echo isset($result2['e']) ? $result2['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result2['FforMcable']) ? $result2['FforMcable'] : "f_{(Mcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['mforMcable']) ? $result2['mforMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{mc} = 4 \cdot <?php echo isset($result2['fla']) ? $result2['fla'] : "FLC_{motor}"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result2['imc']) ? $result2['imc'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{sc4} = <?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] : "I_{sc4}"; ?> \cdot <?php echo isset($result2['mforMcable']) ? $result2['mforMcable'] : "M_{4}"; ?> + <?php echo isset($result2['imc']) ? $result2['imc'] : "I_{mc}"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] . "A" : " "; ?></span>
+            </div>
+        </div>
+
+        <!-- <hr class="mt-10 border-2 border-gray-700"> -->
+
+        <div class="mt-10" id="formula">
+            <h1 class="text-gray-600 font-semibold text-xl">Transformer 3</h1>
+
+            <div class="mt-10 text-xl">
+                \( I_{FLA(T)} = <?php echo isset($result3['kVA']) ? $result3['kVA'] : "KVA"; ?> \cdot \frac{{1000}}{{ <?php echo isset($result3['e']) ? $result3['e'] : "E"; ?> (\sqrt{3})}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['IflaforT']) ? $result3['IflaforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( Multiplier = \frac{{100}}{{ <?php echo isset($result3['z']) ? $result3['z'] : "Z_{tr}"; ?>}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['MultiplierforT']) ? $result3['MultiplierforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA(T)} = <?php echo isset($result3['IflaforT']) ? $result3['IflaforT'] : "I_{FLA}"; ?> \cdot <?php echo isset($result3['MultiplierforT']) ? $result3['MultiplierforT'] : "Multiplier"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['iscaforT']) ? $result3['iscaforT'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( f_{(T)} = \frac{{WireLength \cdot <?php echo isset($result3['iscaforT']) ? $result3['iscaforT'] : "I_{isca(T)}"; ?>}}{{ (C \cdot <?php echo isset($result3['e']) ? $result3['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result3['FforTcable']) ? $result3['FforTcable'] : "f_{(Tcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['mforTcable']) ? $result3['mforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA@Fault} = <?php echo isset($result3['iscaforT']) ? $result3['iscaforT'] : "I_{SCA(T)}"; ?> \cdot <?php echo isset($result3['mforTcable']) ? $result3['mforTcable'] : "M"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] . "A" : " "; ?></span>
+            </div>
+
+            <!-- f for nmcable -->
+            <div class="mt-10 text-xl">
+                \( f_{(Tcable)} = \frac{{(\sqrt{3} \cdot WireLength \cdot <?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] : "I_{SCA(Tcable)}"; ?>)}}{{ (C \cdot <?php echo isset($result3['e']) ? $result3['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result3['FforNMcable']) ? $result3['FforNMcable'] : "f_{(NMcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['mforNMcable']) ? $result3['mforNMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{SCA@Fault} = <?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] : "I_{SCA(Tcable)}"; ?> \cdot <?php echo isset($result3['mforNMcable']) ? $result3['mforNMcable'] : "M"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . "A" : " "; ?></span>
+            </div>
+
+            <!-- f for mcable -->
+            <div class="mt-10 text-xl">
+                \( f_{(Mcable)} = \frac{{(\sqrt{3} \cdot WireLength \cdot <?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] : "I_{SCA(Tcable)}"; ?>)}}{{ (C \cdot <?php echo isset($result3['e']) ? $result3['e'] : "E_{LL}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( M = \frac{{1}}{{ (1 + <?php echo isset($result3['FforMcable']) ? $result3['FforMcable'] : "f_{(Mcable)}"; ?>)}} =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['mforMcable']) ? $result3['mforMcable'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{mc} = 4 \cdot <?php echo isset($result3['fla']) ? $result3['fla'] : "FLC_{motor}"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600"><?php echo isset($result3['imc']) ? $result3['imc'] . "A" : " "; ?></span>
+            </div>
+
+            <div class="mt-10 text-xl">
+                \( I_{sc4} = <?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] : "I_{sc4}"; ?> \cdot <?php echo isset($result3['mforMcable']) ? $result3['mforMcable'] : "M_{4}"; ?> + <?php echo isset($result3['imc']) ? $result3['imc'] : "I_{mc}"; ?> =\)
+                <span class="ml-2 font-serif border p-2 px-4 border-red-600 font-semibold"><?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] . "A" : " "; ?></span>
+            </div>
+        </div>
+    </section>
+    <!-- END LANDING PAGE -->
+    <div class="flex items-center justify-center">
+        <button id="downloadpngButton" class="mt-10 py-2.5 px-5 mr-2 mb-2 text-md font-medium w-full sm:w-1/2 text-gray-50 focus:outline-none bg-yellow-300 rounded-lg border border-gray-200 hover:bg-yellow-500 focus:z-10 focus:ring-4 focus:ring-gray-200"><i class="fa-solid fa-download"></i> Download as PNG</button>
 
         <script>
-            function scrollToBottom() {
-                window.scrollTo({
-                    top: document.documentElement.scrollHeight,
-                    behavior: "smooth"
-                });
-            }
+            document.getElementById("downloadpngButton").addEventListener("click", function() {
+                // Get the section element to be captured as a PNG
+                const section = document.getElementById("calculation"); // Replace "formula" with the actual ID of your section
+
+                // Use dom-to-image to capture the full content of the section
+                domtoimage.toPng(section, {
+                        bgcolor: '#ffffff', // Set the background color to white
+                    })
+                    .then(function(dataUrl) {
+                        // Trigger a download link to save the PNG image
+                        const downloadLink = document.createElement("a");
+                        downloadLink.download = "section_content.png"; // Change the filename as desired
+                        downloadLink.href = dataUrl;
+                        downloadLink.click();
+                    })
+                    .catch(function(error) {
+                        console.error("Error capturing section content:", error);
+                    });
+            });
         </script>
 
-    </main>
+
+
+
+    </div>
+
+    <button id="scroll-btn" onclick="scrollToBottom()" class="fixed bottom-4 right-4 rounded-full bg-yellow-300 text-white w-15 h-15 flex items-center justify-center mb-10 animate-bounce">
+        <i class="fa-solid fa-angles-down w-16 h-10 mt-6"></i>
+    </button>
+
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: "smooth"
+            });
+        }
+    </script>
 
     <footer class="bg-blue-500 rounded-lg shadow mt-20">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -942,6 +1201,7 @@ Isca@F9 =
     <script src="public/js/download-sld.js"></script>
     <script src="public/js/z-percentage.js"></script>
     <script src="public/js/hp-values.js"></script>
+    <script src="public/js/bundlepdf.js"></script>
 </body>
 
 </html>
