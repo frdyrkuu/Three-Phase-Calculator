@@ -496,9 +496,9 @@ Isca@F9 =
                 <!-- TRANSFORMER 1 -->
                 <div class="overflow-x-auto mt-4 shadow-xl rounded-2xl w-full">
                     <table class="w-full text-left text-gray-500 text-lg">
-                        <thead class="text-xl text-gray-700 uppercase dark:text-gray-400">
+                        <thead class="text-xl text-gray-700 uppercase">
                             <tr>
-                                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                                <th scope="col" class="px-6 py-3 bg-gray-50">
                                     Fault
                                 </th>
                                 <th scope="col" class="px-6 py-3">
@@ -507,8 +507,8 @@ Isca@F9 =
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F1 = <span id="f1-isca"><?php echo isset($result1['iscaforTcable']) ? $result1['iscaforTcable'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -516,8 +516,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F2 = <span id="f2-isca"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -525,8 +525,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F3 = <span id="f3-isca"><?php echo isset($result1['iscaforM']) ? $result1['iscaforM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -534,8 +534,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F4 = <span id="f4-isca"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -543,8 +543,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F5 = <span id="f5-isca"><?php echo isset($result1['iscaforNM']) ? $result1['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -559,9 +559,9 @@ Isca@F9 =
                 <!-- TRANSFORMER 2 -->
                 <div class="overflow-x-auto mt-4 shadow-xl rounded-2xl w-full">
                     <table class="w-full text-xl text-left text-gray-500">
-                        <thead class="text-lg text-gray-700 uppercase dark:text-gray-400">
+                        <thead class="text-lg text-gray-700 uppercase ">
                             <tr>
-                                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                                <th scope="col" class="px-6 py-3 bg-gray-50 S">
                                     Fault
                                 </th>
 
@@ -571,8 +571,8 @@ Isca@F9 =
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F6 = <span id="f6-isca"><?php echo isset($result2['iscaforTcable']) ? $result2['iscaforTcable'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -580,8 +580,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F7 = <span id="f7-isca"><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -589,8 +589,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F8 = <span id="f8-isca"><?php echo isset($result2['iscaforM']) ? $result2['iscaforM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -598,8 +598,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F9 = <span id="f9-isca"><?php echo isset($result2['iscaforNM']) ? $result2['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -616,9 +616,9 @@ Isca@F9 =
 
                 <div class="overflow-x-auto mt-4 shadow-xl rounded-2xl w-full">
                     <table class="w-full text-xl text-left text-gray-500">
-                        <thead class="text-lg text-gray-700 uppercase dark:text-gray-400">
+                        <thead class="text-lg text-gray-700 uppercase ">
                             <tr>
-                                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                                <th scope="col" class="px-6 py-3 bg-gray-50 ">
                                     Fault
                                 </th>
 
@@ -628,8 +628,8 @@ Isca@F9 =
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F10 = <span id="f10-isca"><?php echo isset($result3['iscaforTcable']) ? $result3['iscaforTcable'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -637,8 +637,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F11 = <span id="f11-isca"><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -646,8 +646,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F12 = <span id="f12-isca"><?php echo isset($result3['iscaforM']) ? $result3['iscaforM'] . 'A' : '0A'; ?></span>
                                 </th>
 
@@ -655,8 +655,8 @@ Isca@F9 =
                                     0
                                 </td>
                             </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                            <tr class="border-b border-gray-200 ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 ">
                                     F13 = <span id="f13-isca"><?php echo isset($result3['iscaforNM']) ? $result3['iscaforNM'] . 'A' : '0A'; ?></span>
                                 </th>
 

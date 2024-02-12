@@ -27,14 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['result3'] = transformer3($kva3, $z3, $volt3, $fla3);
 
         // Redirect back to index.php (success)
-        header("Location: /index.php#isca");
+        header("Location: ../index.php#isca");
         exit;
     } catch (Exception $e) {
         // Catch the exception, store the error message in the session
         $_SESSION['error'] = $e->getMessage();
 
         // Redirect back to index.php (error)
-        header("Location: /index.php");
+        header("Location: ../index.php");
         exit;
     }
 }
